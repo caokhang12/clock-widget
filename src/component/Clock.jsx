@@ -19,12 +19,9 @@ const Clock = () => {
 
   // useEffect cập nhật thời gian mỗi giây
   useEffect(() => {
-    const interval = setInterval(() => {
+    setInterval(() => {
       settime(getTime());
     }, 1000);
-
-    // Xóa interval khi component unmount
-    return () => clearInterval(interval);
   }, []);
   /*
   Tính toán góc quay của các kim đồng hồ:

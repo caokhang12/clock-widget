@@ -17,3 +17,9 @@ Dự án này sử dụng React và Vite để tạo một ứng dụng đồng 
 3. Cài đặt các dependencies: npm install
 
 4. Chạy ứng dụng: npm run dev
+
+## Hạn chế
+- Nếu dùng transition, kim sẽ bị giật về khi đồng hồ 0h
+
+## Cải thiện
+Thêm tùy chọn múi giờ
