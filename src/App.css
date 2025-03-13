@@ -37,40 +37,55 @@
 
 .hand-hour {
   width: 5px;
-  height: 75px;
+  height: 70px;
   background-color: black;
-  z-index: 3;
+  z-index: 9;
 }
 
 .hand-minute {
   width: 4px;
-  height: 135px;
+  height: 130px;
   background-color: black;
-  z-index: 3;
+  z-index: 9;
 }
 
 .hand-second {
   width: 2px;
-  height: 170px;
+  height: 150px;
   background-color: red;
-  z-index: 4;
+  z-index: 9;
+}
+.line-container {
+  width: 3px;
+  height: 50%;
+  bottom: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform-origin: 50% 100%;
+  z-index: 0;
+}
+
+.line-number {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: 2;
 }
 
 .line {
   width: 3px;
-  height: 387px;
-  background-color: black;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+  height: 80%;
   z-index: 1;
 }
 
 .clock-cover {
-  width: 95%;
-  height: 95%;
+  width: 85%;
+  height: 85%;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 5;
   background-color: white;
   position: absolute;
 }
@@ -97,9 +112,12 @@
     width: 1px;
     height: 120px;
   }
+  .line-number {
+    font-size: 20px;
+  }
+
   .line {
     width: 2px;
-    height: 291px;
   }
 }
 
@@ -114,15 +132,10 @@
     height: 48px;
   }
   .hand-minute {
-    height: 85px;
+    height: 80px;
   }
 
   .hand-second {
-    height: 110px;
-  }
-
-  .line {
-    width: 2px;
-    height: 254px;
+    height: 95px;
   }
 }
