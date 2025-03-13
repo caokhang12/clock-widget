@@ -1,12 +1,19 @@
-# React + Vite
+# Clock Widget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Đây là một dự án React đơn giản để tạo một widget đồng hồ hiển thị thời gian hiện tại với các kim giờ, kim phút và kim giây.
 
-Currently, two official plugins are available:
+## Mô tả
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dự án này sử dụng React và Vite để tạo một ứng dụng đồng hồ. Đồng hồ sẽ hiển thị thời gian thực.
 
-## Expanding the ESLint configuration
+## Cài đặt
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Để cài đặt và chạy dự án này trên máy của bạn, hãy làm theo các bước sau:
+
+1. Clone repository về máy của bạn.
+
+2. Di chuyển vào thư mục dự án: 'clock-widget
+
+3. Cài đặt các dependencies: npm install
+
+4. Chạy ứng dụng: npm run dev
