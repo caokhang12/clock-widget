@@ -38,22 +38,19 @@ const Clock = () => {
 
   // Tạo danh sách các vạch giờ (12 vạch)
   const hourLine = [];
-  for (let i = 0; i < 60; i += 5) {
+  for (let i = 0; i < 12; i++) {
     hourLine.push(
       <div
         className="line-container"
         key={i}
-        style={{ transform: `rotate(${i * 6}deg)` }}
+        style={{ transform: `rotate(${i * 30}deg)` }}
       >
-        {i % 15 === 0 ? (
-          <div className="line-number">{i === 0 ? "12" : i / 5}</div>
+        {i % 3 === 0 ? (
+          <div className="line-number">{i === 0 ? "12" : i}</div>
         ) : (
           ""
         )}
-        <div
-          className="line"
-          style={{ backgroundColor: i % 15 !== 0 ? "black" : "" }}
-        ></div>
+        <div className="line"></div>
       </div>
     );
   }

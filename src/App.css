@@ -79,6 +79,7 @@
   width: 3px;
   height: 80%;
   z-index: 1;
+  background-color: black;
 }
 
 .clock-cover {
